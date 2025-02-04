@@ -175,6 +175,9 @@ runs:
       shell: pwsh
       working-directory: ${{ inputs.directory }}
       run: |
+        Write-Output "Current pnpm version: $(pnpm -v)"
+        Write-Output "Current npm version: $(npm -v)"
+        Write-Output "Current node version: $(node -v)"
         Write-Output "Using .NET SDK from ./global.json:`n$(Get-Content .\global.json -Raw)"
 
         Initialize-ArtifactNameSuffix '${{ inputs.directory }}'
