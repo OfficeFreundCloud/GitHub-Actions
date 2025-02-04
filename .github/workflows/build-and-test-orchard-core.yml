@@ -294,7 +294,7 @@ jobs:
 
       - name: Enable Node.js corepack
         if: inputs.enable-corepack == 'true'
-        uses: Lombiq/GitHub-Actions/.github/actions/enable-corepack@dev
+        uses: OfficeFreundCloud/GitHub-Actions/.github/actions/enable-corepack@issue/OFFI-122
 
       - name: Build and Static Code Analysis
         uses: OfficeFreundCloud/GitHub-Actions/.github/actions/build-dotnet@issue/OFFI-122
